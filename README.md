@@ -42,7 +42,7 @@ This script is designed to manage student data, including adding, deleting, chec
 3. **Run the Script**: Use a Python interpreter to run the script.
 
     ```bash
-    python script_name.py
+    main.py
     ```
 
 ## File Structure
