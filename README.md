@@ -1,4 +1,4 @@
-# Student Data Management Script
+# Student Data Management System
 
 This script manages student data, including adding, deleting, checking, and displaying student records. It also includes an admin password feature for secure access.
 
