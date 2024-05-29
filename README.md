@@ -23,14 +23,17 @@ This script is designed to manage student data, including adding, deleting, chec
 1. **Add New Student Data**:
     - **Input Prompt**: Prompts the user to enter student name, class, and roll number.
     - **Data Storage**: Appends the new student data to the `studentdatatherayhanpy.txt` file.
+    - **Return to Previous Page**: Users can enter `/` to return to the previous page.
 
 2. **Delete Student Data**:
     - **Input Prompt**: Prompts the user to enter the student name, class, and roll number.
     - **Data Deletion**: Reads the file, removes the matching student record, and rewrites the file without the deleted record.
+    - **Return to Previous Page**: Users can enter `/` to return to the previous page.
 
 3. **Check Student Data**:
     - **Input Prompt**: Prompts the user to enter the student name, class, and roll number.
     - **Data Verification**: Checks if the entered student data exists in the file and prints the result.
+    - **Return to Previous Page**: Users can enter `/` to return to the previous page.
 
 4. **Display All Student Data**:
     - **Data Display**: Reads and prints all student records from the file.
