@@ -16,27 +16,45 @@ This script is designed to manage student data, including adding, deleting, chec
 
 ### Main Menu
 
-- **Interactive Choices**: The script presents a menu with options for various student data management tasks. Users can select actions by entering the corresponding codes.
+The script presents a menu with options for various student data management tasks. Users can select actions by entering the corresponding codes:
+
+- **Add New Student Data**: Enter `ns`
+- **Delete Student Data**: Enter `ds`
+- **Update Student Data**: Enter `us`
+- **Check Student Data**: Enter `cs`
+- **Display All Student Data**: Enter `adb`
+- **Change Admin Password**: Enter `ac`
+- **Return to Previous Page**: Enter `/`
 
 ### Student Data Management
 
-1. **Add New Student Data**:
+1. **Add New Student Data** (`ns`):
     - **Input Prompt**: Prompts the user to enter student name, class, and roll number.
     - **Data Storage**: Appends the new student data to the `studentdatatherayhanpy.txt` file.
     - **Return to Previous Page**: Users can enter `/` to return to the previous page.
 
-2. **Delete Student Data**:
+2. **Delete Student Data** (`ds`):
     - **Input Prompt**: Prompts the user to enter the student name, class, and roll number.
     - **Data Deletion**: Reads the file, removes the matching student record, and rewrites the file without the deleted record.
     - **Return to Previous Page**: Users can enter `/` to return to the previous page.
 
-3. **Check Student Data**:
+3. **Update Student Data** (`us`):
+    - **Input Prompt**: Prompts the user to enter the current student name, class, and roll number.
+    - **Data Update**: Allows updating the student name, class, and roll number if a matching record is found.
+    - **Return to Previous Page**: Users can enter `/` to return to the previous page.
+
+4. **Check Student Data** (`cs`):
     - **Input Prompt**: Prompts the user to enter the student name, class, and roll number.
     - **Data Verification**: Checks if the entered student data exists in the file and prints the result.
     - **Return to Previous Page**: Users can enter `/` to return to the previous page.
 
-4. **Display All Student Data**:
+5. **Display All Student Data** (`adb`):
     - **Data Display**: Reads and prints all student records from the file.
+
+### Change Admin Password (`ac`)
+
+- **Input Prompt**: Allows the admin to change the password.
+- **Data Storage**: Stores the new password in the `adminpass.txt` file in binary format.
 
 ## How to Run the Script
 
@@ -45,7 +63,7 @@ This script is designed to manage student data, including adding, deleting, chec
 3. **Run the Script**: Use a Python interpreter to run the script.
 
     ```bash
-    main.py
+    python main.py
     ```
 
 ## File Structure
@@ -56,7 +74,6 @@ This script is designed to manage student data, including adding, deleting, chec
 
 ## Future Enhancements
 
-- **Password Management**: Implement functionality to change the admin password.
 - **Enhanced Validation**: Add validation checks for user inputs to ensure data integrity.
 - **Improved User Interface**: Develop a graphical user interface (GUI) for a better user experience.
 - **Database Integration**: Integrate with a database system for more robust data storage and management.
